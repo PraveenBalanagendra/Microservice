@@ -1,0 +1,13 @@
+D:\Technical\Docker\Demo1\app\bin\Debug\net5.0\NetCore.Docker.exe
+D:\Technical\Docker\Demo1\app\bin\Debug\net5.0\NetCore.Docker.deps.json
+D:\Technical\Docker\Demo1\app\bin\Debug\net5.0\NetCore.Docker.runtimeconfig.json
+D:\Technical\Docker\Demo1\app\bin\Debug\net5.0\NetCore.Docker.runtimeconfig.dev.json
+D:\Technical\Docker\Demo1\app\bin\Debug\net5.0\NetCore.Docker.dll
+D:\Technical\Docker\Demo1\app\bin\Debug\net5.0\NetCore.Docker.pdb
+D:\Technical\Docker\Demo1\app\obj\Debug\net5.0\NetCore.Docker.csprojAssemblyReference.cache
+D:\Technical\Docker\Demo1\app\obj\Debug\net5.0\NetCore.Docker.AssemblyInfoInputs.cache
+D:\Technical\Docker\Demo1\app\obj\Debug\net5.0\NetCore.Docker.AssemblyInfo.cs
+D:\Technical\Docker\Demo1\app\obj\Debug\net5.0\NetCore.Docker.csproj.CoreCompileInputs.cache
+D:\Technical\Docker\Demo1\app\obj\Debug\net5.0\NetCore.Docker.dll
+D:\Technical\Docker\Demo1\app\obj\Debug\net5.0\NetCore.Docker.pdb
+D:\Technical\Docker\Demo1\app\obj\Debug\net5.0\NetCore.Docker.genruntimeconfig.cache
