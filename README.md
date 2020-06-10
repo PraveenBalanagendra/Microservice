@@ -2,4 +2,7 @@
 Simple Log container Example
 
 # Demo2
-An image hosted in single container
+A simple greeting image hosted in single container
+
+# Demo3
+Multiple containers with the same image behind load balancer
