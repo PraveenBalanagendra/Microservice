@@ -2,11 +2,8 @@
 Simple incremental counter container Example
 
 cd to Demo1\App folder
-
 Run command: docker build . -t counter-img:v1.0
-
 Run comamnd: docker run --name counter-container --rm -i -t counter-img:v1.0 5 bash
-
 This will run the image in the container and destroy the container once finished
 
 # Demo2
