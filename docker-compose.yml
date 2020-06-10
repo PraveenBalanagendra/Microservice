@@ -1,13 +1,33 @@
 # Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
 version: '3.4'
 
+# services:
+#   greetings:
+#     image: greetings
+#     build:
+#       context: .
+#       dockerfile: Demo2/services/greetings/Dockerfile
+#     environment:
+#       - ASPNETCORE_URLS=http://+:80
+#     ports:
+#       - "80:80"
+
 services:
   greetings:
     image: greetings
     build:
       context: .
-      dockerfile: Demo2/services/greetings/Dockerfile
+      dockerfile: Demo3/services/greetings/Dockerfile
     environment:
       - ASPNETCORE_URLS=http://+:80
     ports:
-      - "80:80"
+      - "80"
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - greetings
+    ports:
+      - "4000:4000"
