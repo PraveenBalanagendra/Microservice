@@ -1,6 +1,7 @@
 # Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
 version: '3.4'
 
+# Demo2 Section Starts
 # services:
 #   greetings:
 #     image: greetings
@@ -11,7 +12,9 @@ version: '3.4'
 #       - ASPNETCORE_URLS=http://+:80
 #     ports:
 #       - "80:80"
+# Demo2 Section Ends
 
+# Demo3 Section Starts
 services:
   greetings:
     image: greetings
@@ -31,3 +34,4 @@ services:
       - greetings
     ports:
       - "4000:4000"
+# Demo3 Section Ends

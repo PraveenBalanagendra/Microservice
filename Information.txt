@@ -13,7 +13,8 @@ Scenarios
         - docker-compose up --scale service=3 -> service is the service name specified in the docket compose file
         - Not able to mount volumes in C:. Had to change the disk location in Docker setup to an empty folder in D:
         - To mount on C: or D:, permission for docker-compose to be provided in settings.json file. (C:\Users\praveen_balanagendra\AppData\Roaming\Docker\settings.json)
-            "filesharingDirectories": ["C:", "%USERPROFILE%", "D:"],
+            "filesharingDirectories": ["C:", "%USERPROFILE%", "D:"]
+            Restart the Docker Desktop
     - UI container with service layer container
     - Multi Container -> Communication between them
     - Application Gateway
