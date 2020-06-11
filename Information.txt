@@ -2,20 +2,34 @@
     - To build the project: dotnet run --project .\services\greetings\greetings.csproj 
 
 Docker:
-    - To build the image and start the container: docker-compose up -d --build
+    - To build the image and start the container: 
     - docker images
     - docker ps -a
     - docker stop containerid
 
 Scenarios
-    - An image hosted in single container (DONE)
+Demo1
+    cd to Demo1\App folder
+    Run command: docker build . -t counter-img:v1.0
+    Run comamnd: docker run --name counter-container --rm -i -t counter-img:v1.0 5 bash
+        This will run the image in the container and destroy the container once finished
+Demo2
+    - An image hosted in single container
+        docker-compose up -d --build
+
+Demo3
     - Multiple containers with the same image behind load balancer
         - docker-compose up --scale service=3 -> service is the service name specified in the docket compose file
         - Not able to mount volumes in C:. Had to change the disk location in Docker setup to an empty folder in D:
         - To mount on C: or D:, permission for docker-compose to be provided in settings.json file. (C:\Users\praveen_balanagendra\AppData\Roaming\Docker\settings.json)
             "filesharingDirectories": ["C:", "%USERPROFILE%", "D:"]
             Restart the Docker Desktop
+
+Demo4
     - UI container with service layer container
+        Build the angular project using "npm build --prod" command
+        Run command docker-compose up -d --build using the docker compose for Demo4
+
     - Multi Container -> Communication between them
     - Application Gateway
     - Common Login service

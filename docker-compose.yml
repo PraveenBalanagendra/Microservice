@@ -14,13 +14,43 @@ version: '3.4'
 #       - "80:80"
 # Demo2 Section Ends
 
+# # Demo3 Section Starts
+# services:
+#   greetings:
+#     image: greetings
+#     build:
+#       context: .
+#       dockerfile: Demo3/services/greetings/Dockerfile
+#     environment:
+#       - ASPNETCORE_URLS=http://+:80
+#     ports:
+#       - "80"
+
+#   nginx:
+#     image: nginx:latest
+#     volumes:
+#       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+#     depends_on:
+#       - greetings
+#     ports:
+#       - "4000:4000"
+# # Demo3 Section Ends
+
 # Demo3 Section Starts
 services:
+  frontend:
+    image: frontend
+    build:
+      context: .
+      dockerfile: Demo4/frontend/Dockerfile
+    ports:
+      - "9000:80"
+
   greetings:
     image: greetings
     build:
       context: .
-      dockerfile: Demo3/services/greetings/Dockerfile
+      dockerfile: Demo4/services/greetings/Dockerfile
     environment:
       - ASPNETCORE_URLS=http://+:80
     ports:
@@ -34,4 +64,6 @@ services:
       - greetings
     ports:
       - "4000:4000"
+  
+
 # Demo3 Section Ends
