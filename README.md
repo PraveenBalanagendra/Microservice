@@ -31,6 +31,8 @@ UI container with service layer container
 
 1 container for Angular UI, 1 container for load balancer, 1 container for service (multiple service container can be spanned as shown in Demo3). Run the command after setting the docker-compose for the Demo4 project
 
-docker-compose up -d --build
+Build the Angular project using command: ng build --prod
+
+Run the docker compose command: docker-compose up -d --build
 
 Access the URL: http://localhost:9000 for the angular UI
