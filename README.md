@@ -24,3 +24,13 @@ Multiple containers with the same image (API) behind load balancer
 docker-compose up -d --scale greetings=2 --build
 
 Access the URL: http://localhost:4000/api/greeting/asdadasdddd to test the application
+
+# Demo3
+
+UI container with service layer container
+
+1 container for Angular UI, 1 container for load balancer, 1 container for service (multiple service container can be spanned as shown in Demo3). Run the command after setting the docker-compose for the Demo4 project
+
+docker-compose up -d --build
+
+Access the URL: http://localhost:9000 for the angular UI
