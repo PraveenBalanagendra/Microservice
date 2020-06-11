@@ -25,7 +25,7 @@ docker-compose up -d --scale greetings=2 --build
 
 Access the URL: http://localhost:4000/api/greeting/asdadasdddd to test the application
 
-# Demo3
+# Demo4
 
 UI container with service layer container
 
