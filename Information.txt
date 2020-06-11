@@ -13,7 +13,7 @@ Demo1
     Run command: docker build . -t counter-img:v1.0
     Run comamnd: docker run --name counter-container --rm -i -t counter-img:v1.0 5 bash
         This will run the image in the container and destroy the container once finished
-        
+
 Demo2
     - An image hosted in single container
         docker-compose up -d --build
@@ -32,8 +32,9 @@ Demo4
         Run command docker-compose up -d --build using the docker compose for Demo4
 
 Demo5
-    - Multi Container -> Communication between them. Use of messaging layer.
+    - Multi Container -> Communication between them using Docker Network.
 
+    - Multi Container -> Communicating via messaging layer.
     - Application Gateway
     - Common Login service
     - Two images, each one hosted in multiple container and load balancer setup
