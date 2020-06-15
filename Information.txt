@@ -32,10 +32,18 @@ Demo4
         Run command docker-compose up -d --build using the docker compose for Demo4
 
 Demo5
-    - Multi Container -> Communication between them using Docker Network.
-
     - Multi Container -> Communicating via messaging layer.
-    - Application Gateway
+    Using Rabbitmq messaging service
+    Run command docker-compose up -d --build using the docker compose for Demo5
+
+
+    
+    - Application Gateway: Combining one single request with multiple api calls
+    
     - Common Login service
     - Two images, each one hosted in multiple container and load balancer setup
     - Docker Swarm or Kubernetes
+    - Multi Container -> Communication between them using Docker Network.
+        Different types of Docker Network: Bridge (Stand alone), Overlay (Multiple Docker Host. Docker Swarm scenarion), Host (Use Docker Host network), Macvlan (Communicate via Mac address. Each container is a device in the network. 
+        
+        Demostration of Overlay network
